@@ -326,7 +326,7 @@ body {
   position: relative;
 }
 
-.banner .carousel div #mask {
+.banner .carousel div .mask {
   background-color: rgba(73, 203, 205, 0.3);
   height: 100%;
   position: fixed;

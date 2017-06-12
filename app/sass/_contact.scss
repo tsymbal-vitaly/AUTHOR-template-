@@ -1,0 +1,214 @@
+//    contact start
+.contact-section {
+    background-image: url("../img/contact_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 107px 0 99px;
+    .block-title {
+        h2 {
+            color: $white;
+            font-size: 42px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            margin: 0 0 122px 10px;
+        }
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        @include justify-content(space-between);
+        @media screen and (max-width: $break_sm) {
+            @include justify-content(center);
+        }
+        .col {
+            @include col-6();
+            @media screen and (max-width: $break_sm) {
+                @include col-12();
+                margin-bottom: 20px;
+            }
+        }
+        .left-block {
+            h5 {
+                color: $white;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 24px;
+                margin: 0 0 8px 3px;
+            }
+            p {
+                color: $white;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                opacity: 0.5;
+                margin: 0 0 40px 5px;
+            }
+            .social {
+                @include row-flex();
+                margin: 0 0 15px 5px;
+                @media screen and (max-width: $break_sm) {
+                    justify-content: center;
+                    margin: 0 0 15px;
+                }
+                li {
+                    margin-right: 32px;
+                    @media screen and (max-width: $break_sm) {
+                        margin: 0 20px;
+                    }
+                }
+                li {
+                    &:nth-child(1) a {
+                        background-color: $facebook;
+                    }
+                    &:nth-child(2) a {
+                        background-color: $twitter;
+                    }
+                    &:nth-child(3) a {
+                        background-color: $google;
+                    }
+                }
+                a {
+                    @include row-flex();
+                    @include justify-content(center);
+                    @include align-items(center);
+                    width: 40px;
+                    height: 40px;
+                    line-height: 20px;
+                    color: $white;
+                    text-decoration: none;
+                    border-radius: 100%;
+                    transition: $transition_base;
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .contact-info h6,
+            .contact-info a {
+                color: $contact_info_color;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                margin: 0 0 0 6px;
+            }
+            .contact-info a {
+                text-decoration: none;
+            }
+        }
+        .right-block {
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                .inputText,
+                .inputEmail {
+                    width: 47.9%;
+                    margin-bottom: 33px;
+                    @media screen and (max-width: $break_lg) {
+                        width: 100%;
+                    }
+                }
+                .inputText {
+                    margin-right: 22px;
+                    @media screen and (max-width: $break_lg) {
+                        margin-right: 0;
+                    }
+                }
+                .form-control {
+                    padding: 12px 20px 13px;
+                    border-radius: 4px;
+                    border: none;
+                    box-sizing: border-box;
+                    background-color: $white;
+                }
+                textarea {
+                    width: 100%;
+                    margin: 0 0 23px;
+                }
+                .btn {
+                    color: $white;
+                    font-family: $main_font_family;
+                    font-size: 22px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    transition: $transition_base;
+                    background-color: $btn-form_bg;
+                    border-radius: 3px;
+                    border: none;
+                    cursor: pointer;
+                    outline: none;
+                    margin: 0 0 0 auto;
+                    padding: 10px 63px 14px 55px;
+                    @media screen and (max-width: $break_sm) {
+                        padding: 14px 70px 13px;
+                    }
+                    &:hover {
+                        background-color: rgba($btn-form_bg, 0.6);
+                    }
+                    @media screen and (max-width: $break_sm) {
+                        margin: 0 auto;
+                    }
+                }
+            }
+             ::-webkit-input-placeholder {
+                color: $placeholder_color;
+                font-family: $main_font_family;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+             ::-moz-placeholder {
+                color: $placeholder_color;
+                font-family: $main_font_family;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+            /* Firefox 19+ */
+             :-moz-placeholder {
+                color: $placeholder_color;
+                font-family: $main_font_family;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+            /* Firefox 18- */
+             :-ms-input-placeholder {
+                color: $placeholder_color;
+                font-family: $main_font_family;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+            input[placeholder] {
+                text-overflow: ellipsis;
+            }
+            input::-moz-placeholder {
+                text-overflow: ellipsis;
+            }
+            input:-moz-placeholder {
+                text-overflow: ellipsis;
+            }
+            input:-ms-input-placeholder {
+                text-overflow: ellipsis;
+            }
+             :focus::-webkit-input-placeholder {
+                color: transparent;
+            }
+             :focus::-moz-placeholder {
+                color: transparent;
+            }
+             :focus:-moz-placeholder {
+                color: transparent;
+            }
+             :focus:-ms-input-placeholder {
+                color: transparent;
+            }
+        }
+    }
+}
+
+//    contact end

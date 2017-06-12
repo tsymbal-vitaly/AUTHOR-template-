@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Author (template)</title>
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,600,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="SHORTCUT ICON" href="img/favicon.png.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/libs.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,600,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" />
+    <link rel="SHORTCUT ICON" href="img/favicon.png.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/libs.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 <body>
     <div id="wrapper">
@@ -196,6 +196,38 @@
                 </div> <!-- /.row end -->
             </div> <!-- /.container end -->
         </section> <!-- /.plans-section end -->
+        
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="block-title">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="row">
+                    <div class="col left-block">
+                        <h5>Get in touch with us</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry Lorem Ipsum has been the industry's.</p>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <div class="contact-info">
+                            <h6>Posted by Dospel &amp; GanjaParker</h6>
+                            <a href="tel:380505706569">+38 (050) 570-65-69</a><br>
+                            <a href="mailto:tsymbal.vitaly@hotmail.com">tsymbal.vitaly@hotmail.com</a>
+                        </div>
+                    </div> <!-- /.left-block end -->
+                    <div class="col right-block">
+                        <form action="formdata.php" method="post" name="form">
+                            <input type="text" class="form-control inputText" id="inputName" placeholder="Name" required />
+                            <input type="email" class="form-control inputEmail" id="inputEmail" placeholder="Email" required /><br>
+                            <textarea rows="8" cols="45" id="comment" class="form-control" placeholder="Message" required oninput="validateComments(this)"></textarea><br>
+                            <input type="submit" class="btn" name="submit" value="Send" onclick="ValidateEmail(document.form1.text1)"/>
+                        </form> <!-- /form end -->
+                    </div> <!-- /.right-block end -->
+                </div> <!-- /.row end -->
+            </div> <!-- /.container end -->
+        </section> <!-- /.contact end -->
         
     </div> <!-- /#wrapper -->
     

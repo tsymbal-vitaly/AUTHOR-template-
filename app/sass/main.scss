@@ -5,7 +5,8 @@
 
 html,
 body {
-    height: 1500px;
+    height: 3500px; // The height is added for the correct work of the link tracking script
+                    // When adding content, the height value is not required
 }
 
 body {
@@ -25,3 +26,4 @@ body {
 @import"banner";
 @import"team";
 @import"plans";
+@import"contact";

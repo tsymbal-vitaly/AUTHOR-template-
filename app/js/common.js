@@ -4,6 +4,7 @@ jQuery(function() {
     initFixedHeader();
     initSlickGallery();
     initCustomHover();
+    validateEmail();
 });
 
 
@@ -89,5 +90,15 @@ function initCustomHover() {
             holder.removeClass(activeClass);
         });
     })
+}
+
+//  Validate form textarea
+function validateComments(input) {
+	   if (input.value.length < 20) {
+		  input.setCustomValidity("Минимальное количество символов 20");   
+	   }
+	   else {
+		  input.setCustomValidity("");
+	   }
 }
 

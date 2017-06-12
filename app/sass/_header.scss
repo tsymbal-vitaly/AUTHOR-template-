@@ -1,0 +1,186 @@
+//    header start
+.default {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: $header_bg;
+    @media screen and (max-width: $break_sm) {
+        padding: 10px 0;
+        box-sizing: border-box;
+        border-bottom: 2px solid $navlist_hover_color;
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    #logo {
+        margin: 20px 0 0 1px!important;
+        @media screen and (max-width: $break_sm) {
+            margin: 15px 0 15px 1px!important;
+        }
+    }
+    .navlist {
+        a {
+            padding: 20px 20px!important;
+        }
+    }
+    button {
+        @media screen and (max-width: $break_sm) {
+            display: block;
+            position: absolute;
+            top: 5px!important;
+            right: 0;
+            margin: 0;
+        }
+    }
+}
+
+.transbg {
+    background-color: $header_bg;
+}
+
+#menu {
+    margin-right: -15px;
+}
+
+.navbar {
+    display: flex;
+    @include justify-content(space-between);
+    width: 100%;
+    position: relative;
+    @media screen and (max-width: $break_sm) {
+        @include flex-direction(column);
+        @include align-items(flex-start);
+        nav {
+            width: 100%;
+        }
+    }
+    #logo {
+        display: block;
+        color: $logo_color;
+        font-family: $logo_font_family;
+        font-size: 43px;
+        font-weight: $font_weight_normal;
+        line-height: $line-height_base;
+        text-decoration: none;
+        margin: 35px 0 0 1px;
+        @media screen and (max-width: $break_sm) {
+            margin: 20px 0 25px 15px;
+        }
+    }
+    .navlist {
+        display: flex;
+        @include align-items(center);
+        @media screen and (max-width: $break_sm) {
+            display: none;
+        }
+        li {
+            @media screen and (max-width: $break_sm) {
+                margin: 5px 0;
+            }
+        }
+        li+li {
+            margin-left: 14px;
+            @media screen and (max-width: $break_sm) {
+                margin-left: 0;
+            }
+        }
+        a {
+            display: block;
+            font-size: $font_size_base;
+            font-weight: $font_weight_normal;
+            line-height: $line-height_base;
+            letter-spacing: -0.1px;
+            color: $navlist_color;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            padding: 37px 20px 37px;
+            transition: $transition_base;
+            &:hover {
+                color: $navlist_hover_color;
+                background-color: $navlist_hover_bg_color;
+                border-bottom: 2px solid $navlist_hover_color;
+                @media screen and (max-width: $break_sm) {
+                    border: 2px solid $navlist_hover_color;
+                }
+            }
+            @media screen and (max-width: $break_sm) {
+                text-align: center;
+                padding: 15px 0 15px;
+                border: 2px solid transparent;
+            }
+        }
+        .is-active {
+            color: $navlist_hover_color;
+            background-color: $navlist_hover_bg_color;
+            border-bottom: 2px solid $navlist_hover_color;
+            @media screen and (max-width: $break_sm) {
+                border: 2px solid $navlist_hover_color;
+            }
+        }
+    }
+    //    Mobile menu button
+    button {
+        display: none; //display: block;
+        margin: 0 16px;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        @media screen and (max-width: $break_sm) {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            margin: 0;
+        }
+        span {
+            display: block;
+        }
+    }
+    .grid-button {
+        padding: $base*2;
+        cursor: pointer;
+        user-select: none;
+        .grid {
+            width: $base/1.5;
+            height: $base/1.5;
+            background: $color;
+            color: $color;
+            border-radius: 50%;
+            transition: $transition-button;
+        }
+    }
+    .grid-button.close {
+        .grid {
+            -webkit-transform: rotate3d(0, 0, 1, -45deg) scale3d(.8, .8, .8);
+            transform: rotate3d(0, 0, 1, -45deg) scale3d(.8, .8, .8);
+        }
+    }
+    .grid-button.rearrange {
+        .grid {
+            box-shadow: -($base+$space) 0 -($base+$space), 0 0 -($base+$space), ($base+$space) (-($base + $space)), -($base+$space) 0, $base+$space 0, -($base+$space) ($base + $space), 0 ($base+$space), ($base+$space) ($base + $space);
+        }
+    }
+    .grid-button.rearrange.close {
+        .grid {
+            box-shadow: 0 0 -$base, 0 0 -$base*2, $base 0, -$base*2 0, $base*2 0, -$base 0, 0 $base*2, 0 $base;
+        }
+    }
+    .grid-button.collapse {
+        .grid {
+            box-shadow: -($base+$space) 0, -($base+$space) ($base+$space), $base+$space 0, ($base+$space) (-($base+$space)), 0 0 -($base+$space), -($base+$space) 0 -($base+$space), 0 ($base+$space), ($base+$space) ($base+$space);
+        }
+    }
+    .grid-button.collapse.close {
+        .grid {
+            box-shadow: -$base 0, 0 0 transparent, $base 0, 0 0 transparent, 0 0 -$base, 0 0 transparent, 0 $base, 0 0 transparent;
+        }
+    }
+}
+
+//    header end

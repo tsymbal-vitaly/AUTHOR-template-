@@ -1,0 +1,28 @@
+$main_font_family: 'Open Sans', sans-serif;
+$logo_font_family: 'Lobster', cursive;
+$font_size_base: 15px;
+$line-height_base: 24px;
+$font_weight_normal: 400;
+$font_weight_semibold: 600;
+$font_weight_extrabold: 800;
+$font_weight_base: $font_weight_normal;
+
+$transition_base: all 0.3s ease-in-out;
+
+$white: #fff;
+$black: #000;
+$main_color: #4e525d;
+
+$header_bg: $white;
+$logo_color: #44c0c2;
+$button_mob_color: #44c0c2; 
+$main_bg-color: $white;
+$navlist_color: #484c55;
+$navlist_hover_color: #49cbcd;
+$navlist_hover_bg_color: #f8f9fb;
+
+//   MENU BUTTON
+$color: $button_mob_color;
+$transition-button: $transition_base;
+$base: 10px;
+$space: $base/4;

@@ -1,0 +1,385 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  height: 1500px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #4e525d;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1170px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+.default {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.fixed #logo {
+  margin: 20px 0 0 1px !important;
+}
+
+.fixed .navlist a {
+  padding: 20px 20px !important;
+}
+
+.transbg {
+  background-color: #fff;
+}
+
+#menu {
+  margin-right: -15px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.navbar #logo {
+  display: block;
+  color: #44c0c2;
+  font-family: "Lobster", cursive;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+  margin: 35px 0 0 1px;
+}
+
+.navbar .navlist {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar .navlist li + li {
+  margin-left: 14px;
+}
+
+.navbar .navlist a {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  color: #484c55;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding: 37px 20px 37px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navlist a:hover {
+  color: #49cbcd;
+  background-color: #f8f9fb;
+  border-bottom: 2px solid #49cbcd;
+}
+
+.navbar .navlist .is-active {
+  color: #49cbcd;
+  background-color: #f8f9fb;
+  border-bottom: 2px solid #49cbcd;
+}
+
+.navbar button {
+  display: none;
+  margin: 0 16px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.navbar button span {
+  display: block;
+}
+
+.navbar .grid-button {
+  padding: 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.navbar .grid-button .grid {
+  width: 6.66667px;
+  height: 6.66667px;
+  background: #44c0c2;
+  color: #44c0c2;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .grid-button.close .grid {
+  -webkit-transform: rotate3d(0, 0, 1, -45deg) scale3d(0.8, 0.8, 0.8);
+  transform: rotate3d(0, 0, 1, -45deg) scale3d(0.8, 0.8, 0.8);
+}
+
+.navbar .grid-button.rearrange .grid {
+  -webkit-box-shadow: -12.5px -12.5px, 0 -12.5px, 12.5px -12.5px, -12.5px 0, 12.5px 0, -12.5px 12.5px, 0 12.5px, 12.5px 12.5px;
+  box-shadow: -12.5px -12.5px, 0 -12.5px, 12.5px -12.5px, -12.5px 0, 12.5px 0, -12.5px 12.5px, 0 12.5px, 12.5px 12.5px;
+}
+
+.navbar .grid-button.rearrange.close .grid {
+  -webkit-box-shadow: 0 -10px, 0 -20px, 10px 0, -20px 0, 20px 0, -10px 0, 0 20px, 0 10px;
+  box-shadow: 0 -10px, 0 -20px, 10px 0, -20px 0, 20px 0, -10px 0, 0 20px, 0 10px;
+}
+
+.navbar .grid-button.collapse .grid {
+  -webkit-box-shadow: -12.5px 0, -12.5px 12.5px, 12.5px 0, 12.5px -12.5px, 0 -12.5px, -12.5px -12.5px, 0 12.5px, 12.5px 12.5px;
+  box-shadow: -12.5px 0, -12.5px 12.5px, 12.5px 0, 12.5px -12.5px, 0 -12.5px, -12.5px -12.5px, 0 12.5px, 12.5px 12.5px;
+}
+
+.navbar .grid-button.collapse.close .grid {
+  -webkit-box-shadow: -10px 0, 0 0 transparent, 10px 0, 0 0 transparent, 0 -10px, 0 0 transparent, 0 10px, 0 0 transparent;
+  box-shadow: -10px 0, 0 0 transparent, 10px 0, 0 0 transparent, 0 -10px, 0 0 transparent, 0 10px, 0 0 transparent;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .default {
+    padding: 10px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 2px solid #49cbcd;
+  }
+
+  .fixed #logo {
+    margin: 15px 0 15px 1px !important;
+  }
+
+  .fixed button {
+    display: block;
+    position: absolute;
+    top: 5px !important;
+    right: 0;
+    margin: 0;
+  }
+
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .navbar nav {
+    width: 100%;
+  }
+
+  .navbar #logo {
+    margin: 20px 0 25px 15px;
+  }
+
+  .navbar .navlist {
+    display: none;
+  }
+
+  .navbar .navlist li {
+    margin: 5px 0;
+  }
+
+  .navbar .navlist li + li {
+    margin-left: 0;
+  }
+
+  .navbar .navlist a:hover {
+    border: 2px solid #49cbcd;
+  }
+
+  .navbar .navlist a {
+    text-align: center;
+    padding: 15px 0 15px;
+    border: 2px solid transparent;
+  }
+
+  .navbar .navlist .is-active {
+    border: 2px solid #49cbcd;
+  }
+
+  .navbar button {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

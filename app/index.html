@@ -38,38 +38,38 @@
         </header> <!-- /header end -->
         
         <section class="banner">
-            <div class="carousel">
-                <div class="slide-1">
-                    <div class="mask"></div>
-                    <img src="img/img_carousel2.jpg" alt="banner">
+            <div class="banner-carousel">
+                <div>
+                    <div class="overlay"></div>
+                    <img src="img/img_carousel3.jpg" alt="img">
                     <div class="caption">
                         <h1>This is a main heading</h1>
                         <p>Lorem Ipsum is simply dummy text <br>
                         of the printing</p>
                         <a href="#">Learn More</a>
                     </div> <!-- /.caption end -->
-                </div> <!-- /.slide-1 end -->
-                <div class="slide-2">
-                    <div class="mask"></div>
-                    <img src="img/img_carousel2.jpg" alt="banner">
+                </div> <!-- /div slider-item end -->
+                <div>
+                    <div class="overlay"></div>
+                    <img src="img/img_carousel3.jpg" alt="img">
                     <div class="caption">
-                        <h1>This is a main heading</h1>
+                        <h1>Slide 2</h1>
                         <p>Lorem Ipsum is simply dummy text <br>
                         of the printing</p>
                         <a href="#">Learn More</a>
                     </div> <!-- /.caption end -->
-                </div> <!-- /.slide-2 end -->
-                <div class="slide-3">
-                    <div class="mask"></div>
-                    <img src="img/img_carousel2.jpg" alt="banner">
+                </div> <!-- /div slider-item end -->
+                <div>
+                    <div class="overlay"></div>
+                    <img src="img/img_carousel3.jpg" alt="img">
                     <div class="caption">
-                        <h1>This is a main heading</h1>
+                        <h1>Sllide 3</h1>
                         <p>Lorem Ipsum is simply dummy text <br>
                         of the printing</p>
                         <a href="#">Learn More</a>
                     </div> <!-- /.caption end -->
-                </div> <!-- /.slide-3 end -->
-            </div> <!-- /.carousel end -->
+                </div> <!-- /div slider-item end -->
+            </div> <!-- /.banner-carousel end -->
         </section> <!-- /.banner end -->
         
         <section class="team-section scroll-section" id="team">
@@ -221,11 +221,11 @@
                         </div>
                     </div> <!-- /.left-block end -->
                     <div class="col right-block">
-                        <form action="formdata.php" method="post" name="form">
-                            <input type="text" class="form-control inputText" id="inputName" placeholder="Name" required />
-                            <input type="email" class="form-control inputEmail" id="inputEmail" placeholder="Email" required /><br>
-                            <textarea rows="8" cols="45" id="comment" class="form-control" placeholder="Message" required oninput="validateComments(this)"></textarea><br>
-                            <input type="submit" class="btn" name="submit" value="Send" onclick="ValidateEmail(document.form1.text1)"/>
+                        <form action="/" method="post" name="form">
+                            <input type="text" id="name" name="userName" class="form-control inputText" placeholder="Name" minlength='2' required/>
+                            <input type="email" id="email" name="uselEmail" class="form-control inputEmail" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/><br>
+                            <textarea rows="8" cols="45" class="form-control" placeholder="Message" minlength='20' required></textarea><br>
+                            <input type="submit" id="submit" class="btn" value="Send" />
                         </form> <!-- /form end -->
                     </div> <!-- /.right-block end -->
                 </div> <!-- /.row end -->

@@ -1,9 +1,5 @@
 //    header start
 .default {
-    position: absolute;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
     background-color: $header_bg;
     @media screen and (max-width: $break_sm) {
         padding: 10px 0;

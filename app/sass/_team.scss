@@ -1,5 +1,6 @@
 //    team start
 .team-section {
+    position: relative;
     padding: 110px 0 70px;
     color: $team_main_color;
     .block-title {
@@ -51,6 +52,7 @@
                 left: 0;
                 bottom: 0;
                 right: 0;
+                border-radius: 50%;
                 display: none;
                 background-image: url('../img/zoom-icon.png');
                 background-repeat: no-repeat;

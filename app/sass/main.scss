@@ -3,12 +3,6 @@
 
 @include reset();
 
-html,
-body {
-    height: 3200px; // The height is added for the correct work of the link tracking script
-                    // When adding content, the height value is not required
-}
-
 body {
     font-family: $main_font_family;
     font-weight: $font_weight_normal;

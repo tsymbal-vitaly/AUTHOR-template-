@@ -2,9 +2,10 @@ jQuery(function() {
     initAnimationButton();
     initmobileMenu();
     initFixedHeader();
-    initSlickGallery();
+//    initBanner($);
+//    initResponsiveimg();
+    initSlickslider();
     initCustomHover();
-    validateComments(input);
 });
 
 
@@ -59,21 +60,21 @@ function initFixedHeader() {
     });
 }
 
-//  Slilck-slider Banner
-function initSlickGallery() {
-    $('.carousel').slick({
-        autoplay: false,
-        autoplaySpeed: 3000,
-        fade: true,
-        pauseOnHover: true,
-        cssEase: 'linear',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        draggable: false,
-        arrows: true,
-        prevArrow:'<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        nextArrow:'<i class="fa fa-angle-right" aria-hidden="true"></i>' 
-    });
+//  Slider Banner
+function initSlickslider(){
+  $('.banner-carousel').slick({
+    autoplay: false,
+    autoplaySpeed: 3000,
+    fade: true,
+    pauseOnHover: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: false,
+    arrows: true,
+    prevArrow:'<img class="arrow-left" src="img/left.png" alt="left">',
+    nextArrow:'<img class="arrow-right" src="img/right.png" alt="right">' 
+  });
 }
 
 //  Price hover
@@ -92,15 +93,30 @@ function initCustomHover() {
     })
 }
 
-//  Validate form textarea
-function validateComments(input) {
-	   if (input.value.length < 20) {
-		  input.setCustomValidity("Минимальное количество символов 20");   
-	   }
-	   else {
-		  input.setCustomValidity("");
-	   }
-}
+//  Validate form
+$(document).ready(function () {
+   // Only numeric values allowed
+   $("#txtDemoField1").ForceOnlyNumeric();
+   // Only alphabets allowed
+   $("#txtDemoField2").ForceOnlyAlpha();
+   // Only alpha-numeric values allowed
+   $("#txtDemoField3").ForceOnlyAlphaNumeric();
+   // Data with specific length allowed
+   $("#txtDemoField4").MaxLength(8);
+   // Only amount allowed
+   $("#txtDemoField5").ForceAmount();
+   // To allowe valid email address
+   $("#email").ForceEmail();
+   // To allow valid contact number
+   $("#txtDemoField7").ForceContactNumber();
+   // Data with specific length required
+   $("#txtDemoField8").MinLength(3);
+    // To allow valid URL
+   $("#txtDemoField9").ForceURL();
+});
+$(function () {
+    $("#btnValidate").button();
+});
 
 //  Smooth page scrolling
 jQuery(document).ready(function() {

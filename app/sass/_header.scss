@@ -122,6 +122,14 @@
                 border: 2px solid $navlist_hover_color;
             }
         }
+        .active {
+            color: $navlist_hover_color;
+            background-color: $navlist_hover_bg_color;
+            border-bottom: 2px solid $navlist_hover_color;
+            @media screen and (max-width: $break_sm) {
+                border: 2px solid $navlist_hover_color;
+            }
+        }
     }
     //    Mobile menu button
     button {

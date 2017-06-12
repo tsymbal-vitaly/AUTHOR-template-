@@ -26,6 +26,7 @@ gulp.task('scripts', function() {
     return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/slick-1.6.0/slick/slick.js',
+        'node_modules/menuspy/dist/menuspy.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

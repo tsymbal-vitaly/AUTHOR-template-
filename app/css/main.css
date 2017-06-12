@@ -110,7 +110,7 @@ img {
 
 html,
 body {
-  height: 3500px;
+  height: 3200px;
 }
 
 body {
@@ -220,6 +220,12 @@ body {
 }
 
 .navbar .navlist .is-active {
+  color: #49cbcd;
+  background-color: #f8f9fb;
+  border-bottom: 2px solid #49cbcd;
+}
+
+.navbar .navlist .active {
   color: #49cbcd;
   background-color: #f8f9fb;
   border-bottom: 2px solid #49cbcd;
@@ -968,6 +974,10 @@ body {
   }
 
   .navbar .navlist .is-active {
+    border: 2px solid #49cbcd;
+  }
+
+  .navbar .navlist .active {
     border: 2px solid #49cbcd;
   }
 

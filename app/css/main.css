@@ -398,6 +398,98 @@ body {
   border: 3px solid blueviolet;
 }
 
+.team-section {
+  padding: 110px 0 70px;
+  color: #4e525d;
+}
+
+.team-section .block-title {
+  text-align: center;
+}
+
+.team-section .block-title h2 {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 138px 23px;
+}
+
+.team-section .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.team-section .row .col {
+  width: -webkit-calc(25% - 15px);
+  width: calc(25% - 15px);
+  margin: 5px;
+  text-align: center;
+}
+
+.team-section .row .foto {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 68px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #eeeef0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.team-section .row .foto:hover .overlay {
+  display: block;
+}
+
+.team-section .row .foto img {
+  display: block;
+  width: 100%;
+}
+
+.team-section .row .foto .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  background-image: url("../img/zoom-icon.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.team-section .row .subtitle h3 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 5px;
+}
+
+.team-section .row .job h5 {
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0 0 20px;
+}
+
+.team-section .row .description p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 0 28px;
+}
+
 @media screen and (max-width: 1199px) {
   .container {
     padding-left: 30px;
@@ -434,6 +526,11 @@ body {
     font-size: 15px;
     line-height: 25px;
     margin: 0 0 40px;
+  }
+
+  .team-section .row .col {
+    width: -webkit-calc(50% - 15px);
+    width: calc(50% - 15px);
   }
 }
 
@@ -561,6 +658,15 @@ body {
     font-size: 15px;
     line-height: 15px;
     padding: 10px 30px;
+  }
+
+  .team-section .block-title h2 {
+    margin: 0 0 70px 0;
+  }
+
+  .team-section .row .col {
+    width: -webkit-calc(100% - 15px);
+    width: calc(100% - 15px);
   }
 }
 

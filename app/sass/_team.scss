@@ -1,0 +1,88 @@
+//    team start
+.team-section {
+    padding: 110px 0 70px;
+    color: $team_main_color;
+    .block-title {
+        text-align: center;
+        h2 {
+            font-size: 42px;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 0 0 138px 23px;
+            @media screen and (max-width: $break_sm) {
+                margin: 0 0 70px 0;
+            }
+        }
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .col {
+            @include col-3();
+            margin: 5px;
+            text-align: center;
+            @media screen and (max-width: $break_md) {
+                @include col-6();
+            }
+            @media screen and (max-width: $break_sm) {
+                @include col-12();
+            }
+        }
+        .foto {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 68px;
+            border-radius: 50%;
+            background-color: $foto_bg_color;
+            overflow: hidden;
+            cursor: pointer;
+            &:hover .overlay {
+                display: block;
+            }
+            img {
+                display: block;
+                width: 100%;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                display: none;
+                background-image: url('../img/zoom-icon.png');
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-color: rgba($black, 0.2);
+            }
+        }
+        .subtitle {
+            h3 {
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 24px;
+                margin: 0 0 5px;
+            }
+        }
+        .job {
+            h5 {
+                font-weight: 400;
+                line-height: 24px;
+                font-size: 14px;
+                margin: 0 0 20px;
+            }
+        }
+        .description {
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 26px;
+                margin: 0 0 28px;
+            }
+        }
+    }
+}
+
+//    team end

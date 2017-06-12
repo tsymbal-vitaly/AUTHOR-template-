@@ -3,6 +3,7 @@ jQuery(function() {
     initmobileMenu();
     initFixedHeader();
     initSlickGallery();
+    initCustomHover();
 });
 
 
@@ -73,3 +74,20 @@ function initSlickGallery() {
         nextArrow:'<i class="fa fa-angle-right" aria-hidden="true"></i>' 
     });
 }
+
+//  Price hover
+function initCustomHover() {
+    var activeClass = 'active';
+    $('.hover-box').each(function() {
+        var holder = jQuery(this);
+        var button = holder.find('.buy-now');
+        button.hover(
+        function() {
+            holder.addClass(activeClass);
+        }, 
+        function() {
+            holder.removeClass(activeClass);
+        });
+    })
+}
+

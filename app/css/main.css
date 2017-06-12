@@ -490,6 +490,104 @@ body {
   margin: 0 0 28px;
 }
 
+.plans-section {
+  background-color: #f1f1f1;
+  padding: 103px 0 86px;
+}
+
+.plans-section .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.plans-section .row .col {
+  width: -webkit-calc(33.33333% - 15px);
+  width: calc(33.33333% - 15px);
+  margin: 15px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.plans-section .row .col:nth-child(1) {
+  margin-left: 0;
+}
+
+.plans-section .row .col:nth-child(3) {
+  margin-right: 0;
+}
+
+.plans-section .row .title {
+  background-color: #485460;
+  color: #fff;
+  padding: 13px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.plans-section .row .title h3 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.plans-section .row .hover-box.active .title {
+  background-color: #49cbcd;
+}
+
+.plans-section .row .price {
+  background-color: #f8f9fb;
+  padding: 13px 0 8px;
+}
+
+.plans-section .row .price h3 {
+  color: #485460;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.plans-section .row .price-list {
+  margin: 0 0 28px;
+}
+
+.plans-section .row .price-list li {
+  color: #8c9299;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  border-top: 1px solid #ecf0f1;
+}
+
+.plans-section .row .price-list li:last-child {
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.plans-section .row .buy-now {
+  display: inline-block;
+  background-color: #788492;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 40px;
+  text-decoration: none;
+  padding: 0 50px;
+  margin: 0 0 30px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.plans-section .row .buy-now:hover {
+  background-color: #49cbcd;
+}
+
 @media screen and (max-width: 1199px) {
   .container {
     padding-left: 30px;
@@ -667,6 +765,22 @@ body {
   .team-section .row .col {
     width: -webkit-calc(100% - 15px);
     width: calc(100% - 15px);
+  }
+
+  .plans-section .row {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .plans-section .row .col {
+    width: -webkit-calc(100% - 15px);
+    width: calc(100% - 15px);
+    margin: 0;
   }
 }
 

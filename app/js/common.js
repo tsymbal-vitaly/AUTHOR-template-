@@ -2,10 +2,10 @@ jQuery(function() {
     initAnimationButton();
     initmobileMenu();
     initFixedHeader();
-//    initBanner($);
-//    initResponsiveimg();
     initSlickslider();
     initCustomHover();
+    initScrollingpage();
+    initScrollspy();
 });
 
 
@@ -93,33 +93,8 @@ function initCustomHover() {
     })
 }
 
-//  Validate form
-$(document).ready(function () {
-   // Only numeric values allowed
-   $("#txtDemoField1").ForceOnlyNumeric();
-   // Only alphabets allowed
-   $("#txtDemoField2").ForceOnlyAlpha();
-   // Only alpha-numeric values allowed
-   $("#txtDemoField3").ForceOnlyAlphaNumeric();
-   // Data with specific length allowed
-   $("#txtDemoField4").MaxLength(8);
-   // Only amount allowed
-   $("#txtDemoField5").ForceAmount();
-   // To allowe valid email address
-   $("#email").ForceEmail();
-   // To allow valid contact number
-   $("#txtDemoField7").ForceContactNumber();
-   // Data with specific length required
-   $("#txtDemoField8").MinLength(3);
-    // To allow valid URL
-   $("#txtDemoField9").ForceURL();
-});
-$(function () {
-    $("#btnValidate").button();
-});
-
 //  Smooth page scrolling
-jQuery(document).ready(function() {
+function initScrollingpage() {
     $("#menu").on("click", "a", function(event) {
         event.preventDefault();
         var id = $(this).attr('href'),
@@ -128,10 +103,10 @@ jQuery(document).ready(function() {
             scrollTop: top
         }, 1500);
     });
-});
+}
 
 //  scrollspy
-jQuery(document).ready(function () {
+function initScrollspy() {
     const nav = document.querySelector('.navlist');
     const navItems = nav.querySelectorAll('a');
     const sections = document.querySelectorAll('.scroll-section');
@@ -152,5 +127,5 @@ jQuery(document).ready(function () {
     }
 
     window.addEventListener('scroll', scrollSpy);
-});
+}
 

@@ -2,6 +2,7 @@ jQuery(function() {
     initAnimationButton();
     initmobileMenu();
     initFixedHeader();
+    initSlickGallery();
 });
 
 
@@ -53,5 +54,22 @@ function initFixedHeader() {
                     .fadeIn('fast');
             });
         }
+    });
+}
+
+//  Slilck-slider Banner
+function initSlickGallery() {
+    $('.carousel').slick({
+        autoplay: false,
+        autoplaySpeed: 3000,
+        fade: true,
+        pauseOnHover: true,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: false,
+        arrows: true,
+        prevArrow:'<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        nextArrow:'<i class="fa fa-angle-right" aria-hidden="true"></i>' 
     });
 }

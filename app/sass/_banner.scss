@@ -1,0 +1,153 @@
+//    banner start
+.banner {
+    padding: 99px 0 0;
+    @media screen and (max-width: $break_sm) {
+        padding: 90px 0 0;
+    }
+    .carousel {
+        position: relative;
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 55px;
+            color: $slick-arrow_color;
+            background-color: $slick-arrow_bg_color;
+            border-radius: 50%;
+            cursor: pointer;
+            @media screen and (max-width: $break_sm) {
+                font-size: 30px;
+            }
+            @media screen and (max-width: $break_xs) {
+                top: 83%;
+            }
+        }
+        .fa-angle-left {
+            left: 25px;
+            z-index: 10;
+            padding: 0 20px 0 15px;
+            @media screen and (max-width: $break_sm) {
+                padding: 2px 15px 2px 10px;
+                left: 10px;
+            }
+        }
+        .fa-angle-right {
+            right: 25px;
+            padding: 0 15px 0 20px;
+            @media screen and (max-width: $break_sm) {
+                padding: 2px 10px 2px 15px;
+                right: 10px;
+            }
+        }
+        div {
+            position: relative;
+            #mask {
+                background-color: rgba($slick-arrow_color, .3);
+                height: 100%;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+            .caption {
+                position: absolute;
+                top: 48.5%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                width: 100%;
+                @media screen and (max-width: $break_sm) {
+                    top: 0;
+                    left: 0;
+                    position: relative;
+                    transform: none;
+                    background-color: $slick-arrow_color;
+                    height: auto;
+                    padding: 20px 0 30px;
+                }
+                h1 {
+                    text-shadow: 0.1px 1px 0 rgba(0, 0, 0, 0.16);
+                    font-size: 63px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    margin: 0 0 49px;
+                    @media screen and (max-width: $break_lg) {
+                        font-size: 45px;
+                        margin: 0 0 25px;
+                    }
+                    @media screen and (max-width: $break_md) {
+                        font-size: 35px;
+                        margin: 0 0 15px;
+                    }
+                    @media screen and (max-width: $break_sm) {
+                        font-size: 25px;
+                        margin: 0 0 10px;
+                    }
+                }
+                p {
+                    font-size: 23px;
+                    font-weight: 400;
+                    line-height: 37px;
+                    margin: 0 0 75px;
+                    @media screen and (max-width: $break_lg) {
+                        font-size: 18px;
+                        margin: 0 0 50px;
+                    }
+                    @media screen and (max-width: $break_md) {
+                        font-size: 15px;
+                        line-height: 25px;
+                        margin: 0 0 40px;
+                    }
+                    @media screen and (max-width: $break_sm) {
+                        font-size: 13px;
+                        line-height: 15px;
+                        margin: 0 0 25px;
+                    }
+                }
+                a {
+                    font-size: 26px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    text-decoration: none;
+                    border-radius: 4px;
+                    padding: 14px 40px;
+                    transition: $transition_base;
+                    &:hover {
+                        background-color: rgba($white, .5);
+                    }
+                    @media screen and (max-width: $break_lg) {
+                        font-size: 20px;
+                    }
+                    @media screen and (max-width: $break_sm) {
+                        font-size: 15px;
+                        line-height: 15px;
+                        padding: 10px 30px;
+                    }
+                }
+            }
+        }
+        .slide-1 {
+            color: $white;
+            a {
+                color: $white;
+                border: 3px solid $white;
+            }
+        }
+        .slide-2 {
+            color: indianred;
+            a {
+                color: indianred;
+                border: 3px solid indianred;
+            }
+        }
+        .slide-3 {
+            color: blueviolet;
+            a {
+                color: blueviolet;
+                border: 3px solid blueviolet;
+            }
+        }
+    }
+}
+
+//    banner end
